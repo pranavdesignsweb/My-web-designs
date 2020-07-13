@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .navigation {
+            position: sticky;
+            top: 0px;
+            height: 112px;
+            background-color: #202020;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            /* border-bottom: 1px solid white; */
+            font-size: 15px;
+        }
+
+        .navigation img {
+            height: 80px;
+            width: 80px;
+            padding-right: 738px;
+            padding-left: 122px;
+            padding-top: 21px;
+            /* filter: sepia(1); */
+            /* filter:brightness(100%); */
+            filter: invert(100%);
+        }
+
+        .menu {
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        #contact {
+            padding-right: 210px;
+        }
+
+        #about {
+            padding-right: 32px;
+        }
+
+        #home {
+            padding-right: 41px;
+        }
+
+        nav div h4 {
+            padding: 30px 0px 30px 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            /* color: red; */
+            /* font-size: 16px; */
+            text-decoration: underline;
+
+
+        }
+
+
+        #myself {
+
+            background-color: #202020;
+            /* background-image: url(./Asserts/images/madhur.png); */
+            height: 900px;
+
+
+        }
+
+        div h2 {
+            display: flex;
+        }
+
+        div h2 img {
+            height: 400px;
+            width: 520px;
+            padding: 100px 100px;
+            padding-left: 0px;
+            padding-top: 200px;
+        }
+
+        #p1 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 55px;
+            font-weight: 100px;
+            letter-spacing: 0px;
+            line-height: 55px;
+            padding: 275px 137px;
+            padding-top: 397px;
+            padding-bottom: 3px;
+        }
+
+        #p2 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 21px;
+            font-weight: 100px;
+            letter-spacing: 0px;
+            line-height: 55px;
+            padding: 275px 137px;
+            padding-top: 0px;
+            letter-spacing: 8px;
+        }
+
+        #middle {
+            display: flex;
+            background-color: white;
+            height: 700px;
+            margin-top: 30px;
+        }
+
+        .intro1 h4 {
+
+            margin-left: 144px;
+            margin-top: 62px;
+            font-size: 35px;
+            letter-spacing: 0;
+            color: #222222;
+            line-height: 30px;
+            margin-bottom: 5px;
+            padding-bottom: 17px;
+
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .intro1 hr {
+            padding-left: 0px;
+            margin: -8px;
+            margin-left: 90px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 220px;
+
+        }
+
+        .intro1 p {
+            margin: 51px 47px 29px 45px;
+
+        }
+
+        .intro1 ul {
+            padding-top: 56px;
+            padding-left: 103px;
+            font-size: 22px;
+            font-family: 'Merienda One', cursive;
+        }
+
+        .intro1 ul li {
+            padding: 8px 0px;
+        }
+
+
+        .intro2 h4 {
+
+            margin-left: 130px;
+            margin-top: 62px;
+            font-size: 35px;
+            letter-spacing: 0;
+            color: #222222;
+            line-height: 30px;
+            margin-bottom: 5px;
+            padding-bottom: 17px;
+
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .intro2 hr {
+            padding-left: 10px;
+            margin: -8px;
+            margin-left: 83px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 220px;
+
+        }
+
+        .intro2 ul {
+            padding-top: 56px;
+            padding-left: 103px;
+            font-size: 22px;
+            font-family: 'Merienda One', cursive;
+        }
+
+        .intro2 ul li {
+            padding: 10px 0px;
+        }
+
+        .intro2 p {
+            margin: 51px 47px 29px 45px;
+            ;
+        }
+
+        .intro3 h4 {
+
+            margin-left: 82px;
+            margin-top: 62px;
+            font-size: 35px;
+            letter-spacing: 0;
+            color: #222222;
+            line-height: 30px;
+            margin-bottom: 5px;
+            padding-bottom: 17px;
+
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .intro3 hr {
+            padding-left: 45px;
+            margin: -8px;
+            margin-left: 59px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 220px;
+
+        }
+
+        .intro3 p {
+            margin: 51px 47px 29px 45px;
+
+        }
+
+        .intro3 ul {
+            padding-top: 56px;
+            padding-left: 57px;
+            font-size: 22px;
+            font-family: 'Merienda One', cursive;
+        }
+
+        .intro3 ul li {
+            padding: 10px 0px;
+        }
+
+        .intro1 {
+            background-color: white;
+            width: -webkit-fill-available;
+        }
+
+        .intro2 {
+            background-color: white;
+            width: -webkit-fill-available;
+        }
+
+        .intro3 {
+            background-color: white;
+            width: -webkit-fill-available;
+        }
+
+        #last {
+            display: flex;
+        }
+
+        .end {
+            background-color: white;
+            height: 550px;
+
+        }
+
+        .end h4 {
+            margin-left: 149px;
+            margin-top: 62px;
+            font-size: 35px;
+            letter-spacing: 0;
+            color: #202020;
+            line-height: 30px;
+            margin-bottom: 5px;
+            padding-bottom: 10px;
+            padding-top: 50px;
+
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .end hr {
+
+            width: 298px;
+            margin-left: 105px;
+            border: 2px solid black;
+
+        }
+
+        .end ul li {
+            list-style: none;
+        }
+
+        .list1 {
+            margin-left: 92px;
+            margin-top: 70px;
+            margin-bottom: 4px;
+        }
+
+        .list2 {
+            margin-left: 92px;
+            padding-bottom: 14px;
+        }
+
+        .list3 {
+            margin-left: 92px;
+            padding-bottom: 14px;
+        }
+
+        .list4 {
+            margin-left: 92px;
+        }
+
+        .name {
+            height: 34px;
+            width: 100%;
+            background: #fff;
+            border: none;
+            border-bottom: 1px solid #dddddd;
+            margin-bottom: 20px;
+            letter-spacing: 0;
+            font-size: 16px;
+            margin-left: 220px;
+            margin-top: 223px;
+
+        }
+
+        .email {
+            height: 34px;
+            width: 100%;
+            background: #fff;
+            border: none;
+            border-bottom: 1px solid #dddddd;
+            margin-bottom: 20px;
+            letter-spacing: 0;
+            font-size: 16px;
+            margin-left: 141px;
+            margin-top: 223px;
+        }
+
+        .msg {
+            height: 82px;
+            width: 72%;
+            background: #fff;
+            border: none;
+            border-bottom: 1px solid #dddddd;
+            margin-bottom: 20px;
+            letter-spacing: 0;
+            font-size: 17px;
+            margin-left: 219px;
+            margin-top: 18px;
+        }
+
+        .button {
+            background: #222;
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 16px 25px;
+            font-weight: 400;
+            cursor: pointer;
+            outline: none;
+            margin-left: 664px;
+        }
+
+        .entrydiv {
+            display: flex;
+        }
+
+        iframe {
+            height: 100px;
+            width: 100px;
+            margin-left: -160px;
+            margin-top: -76px;
+            opacity: 30%;
+        }
+
+        .final {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            height: 120px;
+        }
+
+        .final img {
+            height: 80px;
+            width: 80px;
+            padding-right: 778px;
+            padding-top: 4px;
+            padding-left: 130px;
+        }
+
+        .final p {
+            font-size: 20px;
+            opacity: 60%;
+        }
+
+        h6 {
+            margin-left: 93px;
+            font-size: 23px;
+            padding-top: 38px;
+
+        }
+
+        .navi {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .naviga {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="naviga">
+            <div class="menu">
+                <img src="./Asserts/images/Asset 2.png" alt="Logo">
+            </div>
+            <div class="navi">
+                <ul class="navi">
+                    <li id="home"><a href="#myself">Home</a></li>
+                    <li id="about"><a href="#middle">About</a></li>
+                    <li id="contact"><a href="#last">Contact</a></li>
+                </ul>
+                <!-- <h4 id="home"><a href="#myself">Home</a></h4>
+                <h4 id="about"><a href="#middle">About Me</a></h4>
+                <h4 id="contact"><a href="#last">Contact</a></h4> -->
+
+            </div>
+        </div>
+    </nav>
+    <div id="myself">
+        <h2>
+            <div>
+                <p id="p1">I'M MADHUR GARG</p>
+                <p id="p2">STUDENT</p>
+            </div>
+            <img src="./Asserts/images/madhur.png" alt="Madhur's Photo">
+        </h2>
+    </div>
+
+    <!-- <div class="middle">
+        <img src="./Asserts/images/random.jpg" alt="">
+        <div>
+            <h4>Early Life</h4>
+            <hr>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa natus dolorem omnis? Placeat iste est
+                libero necessitatibus quo, veritatis possimus perferendis dolores pariatur odio culpa et deserunt
+                repudiandae magni, expedita, nostrum mollitia harum odit? Odio neque magni enim incidunt quidem! Sit
+                velit illo est, tempore labore repellendus fugiat tenetur veritatis magni reprehenderit animi vel
+                officia, alias consequuntur nemo! Molestias quod eum enim, eos eius dolores ut, repellat dolorum at
+                </p>
+           <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptatem, vitae quod suscipit sapiente perspiciatis sit quaerat id iure voluptatum dolorem est delectus quas adipisci velit! Veritatis quae alias numquam, obcaecati deserunt delectus, at sunt sequi sapiente nulla eaque laborum qui quia culpa suscipit! Vel accusamus ad ipsum voluptate sapiente magni sint voluptates nulla iure, delectus soluta dolor, nemo nisi repudiandae commodi laborum saepe eligendi sit, laboriosam dolores aperiam. Ab?Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ipsa quam sit voluptates nisi quasi.</p>
+
+        </div>
+
+
+        <div>
+            <h4>Early Life</h4>
+            <hr>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa natus dolorem omnis? Placeat iste est
+                libero necessitatibus quo, veritatis possimus perferendis dolores pariatur odio culpa et deserunt
+                repudiandae magni, expedita, nostrum mollitia harum odit? Odio neque magni enim incidunt quidem! Sit
+                velit illo est, tempore labore repellendus fugiat tenetur veritatis magni reprehenderit animi vel
+                officia, alias consequuntur nemo! Molestias quod eum enim, eos eius dolores ut, repellat dolorum at
+                </p>
+           <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptatem, vitae quod suscipit sapiente perspiciatis sit quaerat id iure voluptatum dolorem est delectus quas adipisci velit! Veritatis quae alias numquam, obcaecati deserunt delectus, at sunt sequi sapiente nulla eaque laborum qui quia culpa suscipit! Vel accusamus ad ipsum voluptate sapiente magni sint voluptates nulla iure, delectus soluta dolor, nemo nisi repudiandae commodi laborum saepe eligendi sit, laboriosam dolores aperiam. Ab?Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ipsa quam sit voluptates nisi quasi.</p>
+
+        </div>
+
+    </div> -->
+
+    <div id="middle">
+        <div class="intro1">
+            <h4> My Past</h4>
+            <hr>
+            <ul>
+
+                <li>After passing 10th, I went to Kota,</li>
+                <li>Did not achieve good rank in advanced in first try,</li>
+                <li>I studied one more year in kota for jee,</li>
+                <li>After that i got admission in IIT BHU,</li>
+                <li>Now in IIT, I give some time for my spiritual life.</li>
+
+
+            </ul>
+        </div>
+        <div class="intro2">
+            <h4>Hobbies</h4>
+            <hr>
+            <ul>
+                <li>I loves to play Batminton,</li>
+                <li>Riding bicycle,</li>
+                <li>Collecting old coins,</li>
+                <li>Reading Spiritual Books.</li>
+
+            </ul>
+        </div>
+        <div class="intro3">
+            <h4>Achievement</h4>
+            <hr>
+            <ul>
+                <li>In 2016, I got 8 CGPA in class 10,</li>
+                <li>In 2018, I got 77% in class 12,</li>
+                <li>In 2019, I got 10220 rank in JEE <br> Mains,</li>
+                <li>In 2019, I got 4433 rank in JEE Advanced,</li>
+                <li>In 2019, I got chemical engineering branch in IIT BHU.</li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="last">
+        <div class="end">
+            <h4>Get In Touch</h4>
+            <hr>
+            <ul>
+                <li class="list1">128, Saraffa street, Jalesar, UP[ETAH]</li>
+                <li class="list2">India</li>
+                <li class="list3">madhur.gargjls@gmail.com </li>
+                <li class="list4">+91 6395792919, 8394088776</li>
+                <h6>Location:</h6>
+            </ul>
+        </div>
+        <div>
+            <div class="entrydiv">
+                <input type="text" placeholder="Name Here*" class="name">
+                <input type="email" placeholder="Email Here*" class="email">
+            </div>
+            <div>
+                <textarea name="msg" class="msg" placeholder="Message Here*"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="button"> send message </button>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3635689.793072721!2d80.8833819!3d27.141237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1594572348817!5m2!1sen!2sin"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+    </div>
+    <div class="final">
+        <img src="./Asserts/images/Asset 2.png" alt="Logo">
+        <p>@Copyright By abcxyz</p>
+    </div>
+</body>
+
+</html>
